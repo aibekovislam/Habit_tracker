@@ -1,0 +1,288 @@
+.section3__items {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+
+.main__block {
+  background-color: #b286fd;
+  color: white;
+  border-radius: 20px;
+  width: 650px;
+  height: 470px;
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+  transition: all 0.3s;
+}
+
+.infinity {
+  display: block;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  width: 226px;
+  height: 280px;
+  background-color: #7758ae;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  transition: all 0.3s;
+}
+
+.infinity2 {
+  display: block;
+  position: absolute;
+  top: 350px;
+  left: 25px;
+  width: 226px;
+  height: 280px;
+  background-color: #7758ae;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  transition: all 0.3s;
+}
+
+.infinity3 {
+  display: block;
+  position: absolute;
+  bottom: 350px;
+  transform: rotate(90deg);
+  width: 226px;
+  height: 280px;
+  background-color: #7758ae;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  transition: all 0.3s;
+}
+
+.main__block:hover .infinity {
+  width: 236px;
+  height: 290px;
+  transition-duration: 0.3s;
+}
+
+.main__block:hover .infinity2 {
+  width: 236px;
+  transition-duration: 0.3s;
+}
+
+.main__block:hover .infinity3 {
+  height: 290px;
+  transition-duration: 0.3s;
+}
+
+.selfImprove {
+  position: absolute;
+  left: 200px;
+  bottom: 25px;
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  z-index: 2;
+  background-color: initial;
+}
+
+.section3_blocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+}
+
+.big__block {
+  background-color: black;
+  width: 600px;
+  height: 230px;
+  border-radius: 20px;
+  border: 1px solid gray;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.flower {
+  width: 280px;
+  height: 100px;
+  background: #101010;
+  border-radius: 50px;
+  margin-top: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 50px;
+}
+
+.flower::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 100px;
+  border-radius: 50px;
+  transform: rotate(60deg);
+}
+
+.flower::after {
+  content: "";
+  display: block;
+  width: 280px;
+  height: 100px;
+  background: #101010;
+  border-radius: 50px;
+  transform: rotate(-60deg);
+}
+
+.apple_watch {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  right: 3px;
+  left: 370px;
+  z-index: 2;
+  background-color: initial;
+  transition: all 0.3s;
+}
+
+.button_block {
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  padding: 5px 10px;
+  z-index: 3;
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 0.3ms;
+}
+
+.button_block:hover {
+  color: #e55733;
+}
+
+.big__block:hover .apple_watch {
+  width: 330px;
+  height: 330px;
+  transition-duration: 0.3s;
+}
+
+.small__blocks {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.small__block {
+  width: 300px;
+  height: 230px;
+  background-color: #e55733;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.cloud {
+  margin-top: 70px;
+  width: 350px;
+  height: 120px;
+  background: #c44d30;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+  transition: all 0.3s;
+}
+
+.small__block:hover .cloud {
+  width: 370px;
+  height: 130px;
+  transition-duration: 0.3s;
+}
+
+.cloud::after,
+.cloud::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  background: inherit;
+  border-radius: inherit;
+}
+.cloud::after {
+  width: 100px;
+  height: 100px;
+  top: -220px;
+  left: 50px;
+}
+.cloud::before {
+  width: 180px;
+  height: 180px;
+  top: -70px;
+  left: 130px;
+}
+
+.small__block2 {
+  width: 300px;
+  height: 230px;
+  background-color: #b2f042;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.four_pointed_star {
+  position: relative;
+  width: 1em;
+  font-size: 7em;
+  z-index: 1;
+  transition: font-size 0.3s;
+}
+
+.small__block2:hover .four_pointed_star {
+  font-size: 9em;
+  transition-duration: 0.3s;
+}
+
+.four_pointed_star:before {
+  content: "";
+  position: absolute;
+  background: #8dca1b;
+  top: 70px;
+  left: 150px;
+  width: 1em;
+  height: 1.15em;
+  transform: rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
+}
+
+.four_pointed_star:after {
+  content: "";
+  position: absolute;
+  background: #8dca1b;
+  width: 1em;
+  top: 70px;
+  left: 150px;
+  height: 1.15em;
+  transform: rotate(45deg) skewX(22.5deg) skewY(22.5deg);
+}
+
+.small__block2_title {
+  position: absolute;
+  background-color: initial;
+  left: 25px;
+  bottom: 50px;
+  color: black;
+  font-size: 63px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.small__block2_tag {
+  position: absolute;
+  background-color: initial;
+  left: 25px;
+  top: 25px;
+  z-index: 2;
+  color: black;
+  font-weight: normal;
+}

@@ -1,0 +1,44 @@
+.section2 {
+  margin-bottom: 15vh;
+}
+
+.section2__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.typography__buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3vw;
+  height: 150px;
+}
+
+.SVG_image {
+  width: 150px !important;
+  height: 150px !important;
+  cursor: pointer;
+}
+
+.typography__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.typography__title {
+  font-size: 72px;
+  font-weight: 600;
+}
+
+.typography__text {
+  font-size: 32px;
+  width: 33vw;
+  margin-top: 1vh;
+}
+
+.section2__item > img {
+  width: 500px;
+  height: 500px;
+}
